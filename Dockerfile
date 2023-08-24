@@ -1,4 +1,5 @@
 FROM node:latest
-COPY ./ /var/www/html
+COPY ./ /var/www
+WORKDIR /var/www
 ENTRYPOINT ["npm","start"]
-EXPOSE 5000
+EXPOSE 3000
