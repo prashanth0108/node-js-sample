@@ -1,8 +1,7 @@
 FROM node:latest
-MAINTAINER ADDRESS "RADHAKRISHNA"
-RUN npm install
+MAINTAINER ADDRESS "prashanthkusuma"
 WORKDIR /var
-COPY package*.json ./
+COPY package*.json ./var 
 COPY . .
 CMD ["npm","start"]
 EXPOSE 5000
